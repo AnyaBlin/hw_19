@@ -3,6 +3,7 @@ package tests;
 import com.codeborne.selenide.Configuration;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -49,6 +50,7 @@ public class DemoWebShop {
             System.out.println("Response " + response.asString());
         });
     }
+
     @Tag("demowebshop")
     @Test
     void loginWithCookieTest() {

@@ -1,5 +1,6 @@
 package tests;
 
+import com.codeborne.selenide.Configuration;
 import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -17,6 +18,7 @@ public class BookStoreTests {
     static void setup() {
 
         RestAssured.baseURI = "https://demoqa.com";
+        Configuration.baseUrl = "https://demoqa.com";
 
     }
 
