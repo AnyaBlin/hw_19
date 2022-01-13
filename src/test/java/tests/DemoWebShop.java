@@ -39,7 +39,7 @@ public class DemoWebShop {
                             .contentType("application/x-www-form-urlencoded; charset=UTF-8")
                             .body(data)
                             .when()
-                            .post("http://demowebshop.tricentis.com/addproducttocart/details/72/1")
+                            .post("/addproducttocart/details/72/1")
                             .then()
                             .statusCode(200)
                             .body("updatetopcartsectionhtml", is("(1)"))
