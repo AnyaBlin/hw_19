@@ -85,7 +85,7 @@ public class BookStoreTests {
                 .post("Account/v1/GenerateToken")
                 .then()
                 .log().body()
-                .body("status", is("Success"))
+                .body("status", is("Failed"))
                 .body("result", is("User authorized successfully."));
 
     }
